@@ -6,9 +6,9 @@ const { createUser, login, deleteCookies } = require('../controllers/users');
 const auth = require('../middlewares/auth');
 const errorHandler = require('../middlewares/errorHandler');
 const NotFoundError = require('../utils/notFoundError');
-const { reqLogger, errLogger } = require('../middlewares/logger');
+const { requestLog, errorLog } = require('../middlewares/logger');
 
-router.use(reqLogger);
+router.use(requestLog);
 
 router.get('/crash-test', () => {
   setTimeout(() => {
@@ -41,7 +41,7 @@ router.use('/signout', deleteCookies);
 
 router.use((req, res, next) => next(new NotFoundError('Не найден')));
 
-router.use(errLogger);
+router.use(errorLog);
 
 router.use(errors());
 
