@@ -1,5 +1,38 @@
-# movies-explorer-api
+# Проект Movies Backend
 
-IP 84.201.158.120
+API для [веб-сайта портфолио](https://github.com/LeilaSuleimanova/movies-explorer-frontend.git), после регистрации пользователи могут искать фильмы и добавлять их в избранное в личном кабинете.
 
-Backend https://api.leila.nomoredomainsicu.ru
+---
+
+Статус проекта: done
+
+---
+
+Реализовано:
+
+- Авторизация и регистрация пользователей.
+
+- Обновление данных пользователя и их получение.
+
+- Получение, сохранение, удаление фильмов пользователя.
+
+- Валидация данных.
+
+- Центральная обработка ошибок.
+
+При создании веб-сайта применены технологии:
+
+- NodeJS;
+- Express;
+- MongoDB;
+- Mongoose.
+
+Инструкция по развертыванию:
+
+1. Склонируйте репозиторий локально: `git clone https://github.com/LeilaSuleimanova/movies-explorer-api.git`
+
+2. Установите Node.js с официального сайта https://nodejs.org/
+
+3. Установите модули npm: `npm install`
+
+4. Запустите проект: `npm run start`
